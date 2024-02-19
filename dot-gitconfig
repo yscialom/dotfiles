@@ -3,7 +3,7 @@
     name = Yankel Scialom (YSC)
     email = yankel@scialom.org
 [core]
-    editor = emacs
+    editor = vim
     autocrlf = input
 [color]
     diff = auto
@@ -19,11 +19,10 @@
     #branches
     ri = rebase -i --autosquash
     #remote
-    upush = !git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD)
     dpush = push origin --delete
-    fpush = !git dpush $(git rev-parse --abbrev-ref HEAD) && git upush
+    fpush = push --force-with-lease
 [push]
     default = simple
-	autoSetupRemote = true
+    autoSetupRemote = true
 [pull]
-	ff = only
+    ff = only
