@@ -1,0 +1,30 @@
+#
+## === GNU TOOLS ===
+#
+# ls & tree
+alias ls='exa --icons --group-directories-first'
+alias l='ls -F'
+alias ll='ls -alhF'
+alias tree='ls --tree'
+# grep
+alias grep='/bin/grep --color=auto'
+alias rgrep='grep --recursive --line-number'
+# directories
+cdnew() { mkdir -p "${1:-new}" && cd "${1:-new}"; }
+cdtmp() { cd "$(mktemp -d)"; }
+function bak () { cp "$1" "$1.bak-$(date +'%Y%m%d-%H%M%S')"; }
+# which / command
+alias which='command -v'
+# system
+aptupgrade() { sudo apt update && sudo apt dist-upgrade ; }
+
+#
+## === DEV ===
+#
+alias python=python3
+
+#
+## === HOME INFRA
+#
+alias hpool="ssh root@pve zpool"
+
