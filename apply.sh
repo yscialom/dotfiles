@@ -1,2 +1,2 @@
 #!/bin/bash
-stow -vR --target=$HOME $(dirname $0)
+stow --verbose --restow --target=$HOME --dotfiles $(dirname $0)
