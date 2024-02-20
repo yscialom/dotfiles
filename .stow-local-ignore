@@ -2,6 +2,9 @@
 \.gitignore
 .*\.sh
 
-^/README.*
-^/LICENSE.*
 ^/COPYING
+^/INSTALL.*
+^/LICENSE.*
+^/README.*
+^/requirements.txt
+^/suggested.txt
