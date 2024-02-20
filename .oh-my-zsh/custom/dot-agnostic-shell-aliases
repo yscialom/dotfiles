@@ -9,14 +9,14 @@ alias tree='ls --tree'
 # grep
 alias grep='/bin/grep --color=auto'
 alias rgrep='grep --recursive --line-number'
+#batcat
+alias cat='batcat'
 # directories
 cdnew() { mkdir -p "${1:-new}" && cd "${1:-new}"; }
 cdtmp() { cd "$(mktemp -d)"; }
 function bak () { cp "$1" "$1.bak-$(date +'%Y%m%d-%H%M%S')"; }
 # which / command
 alias which='command -v'
-# system
-aptupgrade() { sudo apt update && sudo apt dist-upgrade ; }
 
 #
 ## === DEV ===
