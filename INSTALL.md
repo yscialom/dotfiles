@@ -18,6 +18,6 @@ git clone --depth=1 https://github.com/zsh-users/zsh-autosuggestions\
     ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
 git clone --depth=1 https://github.com/yscialom/dotfiles.git && cd dotfiles
-cat requirements.txt suggestions.txt | xargs apt install -y
+cat requirements.txt suggested.txt | xargs apt install -y
 rm ~/.zshrc
 ./apply.sh
