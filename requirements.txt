@@ -1,5 +1,4 @@
-batcat
+bat
 exa
-oh-my-zsh
 stow
 zoxide
