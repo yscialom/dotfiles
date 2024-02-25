@@ -129,4 +129,3 @@ source $ZSH/oh-my-zsh.sh
 
 # local rc: put your local-env configuration here.
 [[ ! -f ~/.zshrc-local ]] || source ~/.zshrc-local
-
