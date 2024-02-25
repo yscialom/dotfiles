@@ -4,7 +4,7 @@
 # Local override mechanism available (see include/source at the end of files)
 #
 [user]
-    signingkey = 60D4B5C1E7AD8C1C
+    signingkey = D66806ED9B0836A2
     name = Yankel Scialom (YSC)
     email = yankel@scialom.org
 [core]
