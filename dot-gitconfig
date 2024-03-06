@@ -28,7 +28,7 @@
     dpush = push origin --delete
     fpush = push --force-with-lease
 [push]
-    default = simple
+    default = matching
     autoSetupRemote = true
 [pull]
     ff = only
