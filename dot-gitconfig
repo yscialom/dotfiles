@@ -27,6 +27,8 @@
     #remote
     dpush = push origin --delete
     fpush = push --force-with-lease
+[rebase]
+    updateRefs = true
 [push]
     default = matching
     autoSetupRemote = true
