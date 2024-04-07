@@ -6,7 +6,7 @@ if [[ -z ${OS_DEFAULT_PATH} ]] ; then
 fi
 export PATH="${OS_DEFAULT_PATH}\
 :${HOME}/bin\
-:$HOME/.local/bin\
+:${HOME}/.local/bin\
 "
 
 
@@ -25,4 +25,3 @@ export EDITOR='vim'
 #
 eval "$(ssh-agent -s)" >/dev/null  || echo "$0: starting ssh-agent: error $?"      >&2
 ssh-add ~/.ssh/id_rsa  2>/dev/null || echo "$0: adding default identity: error $?" >&2
-
