@@ -10,7 +10,9 @@ alias tree='ls --tree'
 alias grep='/bin/grep --color=auto'
 alias rgrep='grep --recursive --line-number'
 #batcat
-alias cat='batcat'
+for batcat_command in bat batcat ; do
+    command -v ${batcat_command} &>/dev/null && alias cat=${batcat_command}
+done
 # directories
 cdnew() { mkdir -p "${1:-new}" && cd "${1:-new}"; }
 cdtmp() { cd "$(mktemp -d)"; }
@@ -27,4 +29,3 @@ alias python=python3
 ## === HOME INFRA
 #
 alias hpool="ssh root@pve zpool"
-
