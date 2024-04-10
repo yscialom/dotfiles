@@ -30,7 +30,7 @@
 [rebase]
     updateRefs = true
 [push]
-    default = matching
+    default = simple
     autoSetupRemote = true
 [pull]
     ff = only
