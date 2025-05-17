@@ -6,7 +6,11 @@ Features
 * git configuration
 * zsh with powerlevel10k theme
 * zoxide et fzf
-* quality of life tools: batcat, exa
+* quality of life tools:
+  * batcat: modern cat replacement
+  * exa: modern ls replacement
+  * duf: modern df replacement
+  * dust: modern du alternative
 
 Installation
 ---
