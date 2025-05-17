@@ -13,12 +13,14 @@ alias rgrep='grep --recursive --line-number'
 for batcat_command in bat batcat ; do
     command -v ${batcat_command} &>/dev/null && alias cat=${batcat_command}
 done
+# which / command
+alias which='command -v'
 # directories
 cdnew() { mkdir -p "${1:-new}" && cd "${1:-new}"; }
 cdtmp() { cd "$(mktemp -d)"; }
 function bak () { cp "$1" "$1.bak-$(date +'%Y%m%d-%H%M%S')"; }
-# which / command
-alias which='command -v'
+# filesystem
+alias df='duf --hide special --hide-mp "/var/snap/*"'
 
 #
 ## === DEV ===
