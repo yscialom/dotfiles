@@ -1,33 +1,46 @@
 #
 ## === GNU TOOLS ===
 #
+
 # ls & tree
-alias ls='exa --icons --group-directories-first --git --git-repos'
+if exa --help | grep -q -- --git-repos
+then alias ls='exa --icons --group-directories-first --git --git-repos'
+else alias ls='exa --icons --group-directories-first --git'
+fi
 alias l='ls -F'
 alias ll='ls -alhF'
 alias tree='ls --tree'
+
 # grep
 alias grep='/bin/grep --color=auto'
 alias rgrep='grep --recursive --line-number'
-#batcat
+
+# batcat
 for batcat_command in bat batcat ; do
     command -v ${batcat_command} &>/dev/null && alias cat=${batcat_command}
 done
+
 # which / command
 alias which='command -v'
+
 # directories
 cdnew() { mkdir -p "${1:-new}" && cd "${1:-new}"; }
 cdtmp() { cd "$(mktemp -d)"; }
 function bak () { cp "$1" "$1.bak-$(date +'%Y%m%d-%H%M%S')"; }
+
 # filesystem
 alias df='duf --hide special --hide-mp "/var/snap/*"'
+
 
 #
 ## === DEV ===
 #
+
 alias python=python3
+
 
 #
 ## === HOME INFRA
 #
+
 alias hpool="ssh root@pve zpool"
