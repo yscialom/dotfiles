@@ -33,6 +33,11 @@ alias df='duf --hide special --hide-mp "/var/snap/*"'
 
 
 #
+## === External Tools ===
+#
+command -v zbarimg >/dev/null && alias qrdecode='zbarimg -q --raw'
+
+#
 ## === DEV ===
 #
 
