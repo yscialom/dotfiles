@@ -6,5 +6,6 @@
 ^/INSTALL.*
 ^/LICENSE.*
 ^/README.*
+^/IDEAS.md
 ^/requirements.txt
 ^/suggested.txt
