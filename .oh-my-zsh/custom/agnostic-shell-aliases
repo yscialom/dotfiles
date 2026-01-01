@@ -26,7 +26,7 @@ alias which='command -v'
 # directories
 cdnew() { mkdir -p "${1:-new}" && cd "${1:-new}"; }
 cdtmp() { cd "$(mktemp -d)"; }
-function bak () { cp "$1" "$1.bak-$(date +'%Y%m%d-%H%M%S')"; }
+function bak () { cp -r -- "$1" "$1.bak-$(date +'%Y%m%d-%H%M%S')"; }
 
 # filesystem
 alias df='duf --hide special --hide-mp "/var/snap/*"'
