@@ -27,6 +27,8 @@
     d = diff --word-diff
     cr = diff --cached
     pr = "!open $(git remote get-url origin | sed 's|:|/|;s|^git@|https://|;s|.git$||') 2>/dev/null"
+    #commit
+    amend = commit --amend --no-edit
     #branches
     ri = rebase -i --autosquash
     #remote
