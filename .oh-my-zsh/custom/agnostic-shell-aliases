@@ -15,13 +15,14 @@ alias tree='ls --tree'
 alias grep='/bin/grep --color=auto'
 alias rgrep='grep --recursive --line-number'
 
+# gnutils
+alias which='command -v'
+alias ip='ip --oneline'
+
 # batcat
 for batcat_command in bat batcat ; do
     command -v ${batcat_command} &>/dev/null && alias cat=${batcat_command}
 done
-
-# which / command
-alias which='command -v'
 
 # directories
 cdnew() { mkdir -p "${1:-new}" && cd "${1:-new}"; }
