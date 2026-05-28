@@ -43,6 +43,7 @@ command -v zbarimg >/dev/null && alias qrdecode='zbarimg -q --raw'
 #
 
 alias python=python3
+alias dc='docker compose'
 
 
 #
