@@ -4,7 +4,7 @@
 # Local override mechanism available (see include/source at the end of files)
 #
 [user]
-    signingkey = D66806ED9B0836A2
+    signingkey = FA2D5C9DABF1D69D
     name = Yankel Scialom (YSC)
     email = yankel@scialom.org
 [core]
@@ -46,3 +46,7 @@
     enabled = true
 [include]
     path = ~/.gitconfig-local # put your local-env configuration here; existing keys would be overwritten.
+[commit]
+	gpgsign = true
+[tag]
+	gpgsign = true
