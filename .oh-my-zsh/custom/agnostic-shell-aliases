@@ -37,6 +37,7 @@ alias df='duf --hide special --hide-mp "/var/snap/*"'
 ## === External Tools ===
 #
 command -v zbarimg >/dev/null && alias qrdecode='zbarimg -q --raw'
+docker image ls --format "{{ .Repository }}" | grep -E '^tldr$' >/dev/null && alias tldr='docker run --rm -t tldr'
 
 #
 ## === DEV ===
