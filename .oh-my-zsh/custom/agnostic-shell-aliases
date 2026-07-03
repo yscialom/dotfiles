@@ -18,6 +18,7 @@ alias rgrep='grep --recursive --line-number'
 # gnutils
 alias which='command -v'
 alias ip='ip --oneline'
+alias ipa="ip --color --brief a"
 
 # batcat
 for batcat_command in bat batcat ; do
