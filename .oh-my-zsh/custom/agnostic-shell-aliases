@@ -15,6 +15,13 @@ alias tree='ls --tree'
 alias grep='/bin/grep --color=auto'
 alias rgrep='grep --recursive --line-number'
 
+# columns
+alias col1="awk '{print \$1}'"
+alias col2="awk '{print \$2}'"
+alias col3="awk '{print \$3}'"
+alias col4="awk '{print \$4}'"
+alias col5="awk '{print \$5}'"
+
 # gnutils
 alias which='command -v'
 alias ip='ip --oneline'
