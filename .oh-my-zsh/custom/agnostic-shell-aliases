@@ -4,8 +4,8 @@
 
 # ls & tree
 if exa --help | grep -q -- --git-repos
-then alias ls='exa --icons --group-directories-first --git --git-repos'
-else alias ls='exa --icons --group-directories-first --git'
+then alias ls='exa --icons --group-directories-first --smart-group --git --git-repos'
+else alias ls='exa --icons --group-directories-first --smart-group --git'
 fi
 alias l='ls -F'
 alias ll='ls -alhF'
