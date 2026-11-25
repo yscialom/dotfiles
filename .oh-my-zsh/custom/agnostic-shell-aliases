@@ -3,10 +3,12 @@
 #
 
 # ls & tree
+function exa_common_options() { echo '--icons --group-directories-first --group --smart-group --git' ; }
 if exa --help | grep -q -- --git-repos
-then alias ls='exa --icons --group-directories-first --smart-group --git --git-repos'
-else alias ls='exa --icons --group-directories-first --smart-group --git'
+then alias ls="exa $(exa_common_options) --git-repos"
+else alias ls="exa $(exa_common_options)"
 fi
+unset -f exa_common_options
 alias l='ls -F'
 alias ll='ls -alhF'
 alias tree='ls --tree'
